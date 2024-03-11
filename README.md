@@ -23,7 +23,7 @@ Each project folder includes:
 
 ## Technologies Used
 
-Throughout these projects, we have utilized various graphics programming libraries and tools, like:
+Throughout these projects, we have used various graphics programming libraries and tools, like:
 
 - WebGL
 - Three.js
