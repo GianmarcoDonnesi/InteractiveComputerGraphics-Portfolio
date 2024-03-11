@@ -9,7 +9,7 @@ This function accepts four parameters:
 - `bgImg`: the background image to be modified.
 - `fgImg`: the foreground image that is to be composited onto the background image.
 - `fgOpac`: the opacity of the foreground image, with its alpha values scaled accordingly.
-- `fgPos`: the position of the foreground image on the background image, containing x and y coordinates in pixels. Coordinates `x=0` and `y=0` mean the top-left pixels of both foreground and background images are aligned. The coordinates can also be negative.
+- `fgPos`: the position of the foreground image on the background image, containing x and y coordinates in pixels. Coordinates `x=0` and     `y=0` mean the top-left pixels of both foreground and background images are aligned. The coordinates can also be negative.
 
 The function directly modifies the background image, incorporating the foreground image based on the specified opacity and position. It accommodates different sizes of foreground images and manages cases where the foreground image's position extends beyond the background image's boundaries.
 
