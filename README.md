@@ -11,7 +11,7 @@ The Interactive Computer Graphics course has offered an in-depth study of comput
 
 This repository is organized as follows:
 
-- `/Project1`: This folder contains the first project, which focuses on basic 2D graphics drawing techniques.
+- `/Project1_ComposingImages`: This folder contains the first project, which focuses on basic 2D graphics drawing techniques.
 
 
 
