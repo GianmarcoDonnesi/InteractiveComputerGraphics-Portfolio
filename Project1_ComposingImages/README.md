@@ -2,7 +2,9 @@ In this project, I've developed an alpha compositing function specifically for r
 
 The heart of my contribution is the JavaScript function **composite**, which composites a foreground image onto a background image using alpha blending. The function signature is as follows:
 
-**function composite(bgImg, fgImg, fgOpac, fgPos)**
+```javascript
+function composite(bgImg, fgImg, fgOpac, fgPos)
+```
 
 This function accepts four parameters:
 
