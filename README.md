@@ -5,19 +5,19 @@ This repository serves as a comprehensive collection of projects developed throu
 
 ## Course Overview
 
-The Interactive Computer Graphics course has offered an in-depth study of computer graphics fundamentals, including topics such as 3D rendering, animation, and how users interact with digital environments. It has explored numerous essential topics such as geometric transformations, models of lighting and shading, texture mapping, graphics hardware, and the seamless fusion of WebGL with HTML5 and JavaScript. This integration facilitates the creation of captivating web-based graphics applications, providing a broad overview of the field and equipping students with the skills to craft immersive visual experiences.
+The Interactive Computer Graphics course has offered an in-depth study of computer graphics fundamentals, including topics such as 3D rendering, animation, and how users interact with digital environments. It has explored numerous essential topics such as geometric transformations, models of lighting and shading, texture mapping, graphics hardware, and the seamless fusion of WebGL with HTML5 and JavaScript.
 
 ## Repository Structure
 
 This repository is organized as follows:
 
-- `/Project1_ComposingImages`: This folder contains the first project, which focuses on basic 2D graphics drawing techniques.
+- `/Project1_ComposingImages`: this folder contains the first project, which focuses on implementing an alpha compositing function for raster images using JavaScript.
 
 
 
 Each project folder includes:
 - Source code files
-- Detailed documentation explaining the project objectives, techniques used, and how to run the application
+- Detailed README file explaining the project objectives, techniques used, and how to run the application
 - Any necessary assets (textures, models, etc.)
 
 
