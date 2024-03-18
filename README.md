@@ -29,3 +29,6 @@ Throughout these projects, we have used various graphics programming libraries a
 - Three.js
 - JavaScript
 
+
+## License
+Unless otherwise stated, the code in this repository is licensed under [MIT license](LICENSE). This permits reuse and distribution according to the terms of the license.
