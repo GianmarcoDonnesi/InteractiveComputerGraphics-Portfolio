@@ -12,6 +12,7 @@ The Interactive Computer Graphics course has offered an in-depth study of comput
 This repository is organized as follows:
 
 - `/Project1_ComposingImages`: this folder contains the first project, which focuses on implementing an alpha compositing function for raster images using JavaScript.
+- `/Project2_Transformations`: this folder contains the second project, which focuses on implementing a UAV simulation design using transformation functions in JavaScript .
 
 
 
