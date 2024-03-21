@@ -1,3 +1,4 @@
+## Development of an Alpha Compositing Function for Web-based Image Editing
 In this project, I've developed an alpha compositing function specifically for raster images using JavaScript. This function is a key component of a web-based image compositing application, which is showcased in a video available at the following link: https://youtu.be/QpwfzYpseeo.
 
 The heart of my contribution is the JavaScript function **composite**, which composites a foreground image onto a background image using alpha blending. The function signature is as follows:
