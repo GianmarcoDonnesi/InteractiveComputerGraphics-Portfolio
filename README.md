@@ -1,6 +1,6 @@
 # Interactive Computer Graphics Portfolio
 
-This repository serves as a comprehensive collection of projects developed throughout the Interactive Computer Graphics course a.y. 23/24. Each project is a testament to the learning journey undertaken in this course, demonstrating the application of theoretical concepts in practical scenarios. This series of homework projects were inspired by the [CS 4660 course](https://graphics.cs.utah.edu/courses/cs4600/fall2023/) of the University of Utah.
+This repository serves as a comprehensive collection of projects developed throughout the Interactive Computer Graphics course a.y. 23/24. Each project is a testament to the learning journey undertaken in this course, demonstrating the application of theoretical concepts in practical scenarios. This series of homework projects was inspired by the [CS 4660 course](https://graphics.cs.utah.edu/courses/cs4600/fall2023/) at the University of Utah.
 
 
 ## Course Overview
