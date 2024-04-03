@@ -8,7 +8,7 @@ The core objective was to render textured 3D objects efficiently on the GPU usin
 
 1. **Transformation Matrix Computation:**
    - Implemented a JavaScript function named `GetModelViewProjection` to compute a 4x4 transformation matrix incorporating perspective projection, translations, and rotations.
-   - The perspective projection matrix was given as input, alongside translation and rotation parameters. The challenge was to apply these transformations in a specific order to achieve a movement that mimics the demonstration video (https://www.youtube.com/watch?v=GpvuIMx2ggw&t=1s).
+   - The perspective projection matrix was given as input, alongside translation and rotation parameters. The challenge was to apply these transformations in a specific order to achieve a movement that mimics the [demonstration video](https://www.youtube.com/watch?v=GpvuIMx2ggw&t=1s).
 
 2. **Triangular Mesh Rendering:**
    - Developed the `MeshDrawer` class for rendering the triangular mesh loaded from OBJ files. This class handles WebGL initializations, vertex and texture coordinate setting, axis swapping, and drawing.
