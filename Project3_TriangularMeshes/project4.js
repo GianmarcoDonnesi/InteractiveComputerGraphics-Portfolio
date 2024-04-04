@@ -45,7 +45,6 @@ function GetModelViewProjection( projectionMatrix, translationX, translationY, t
 
 class MeshDrawer
 {
-	// The constructor is a good place for taking care of the necessary initializations.
 	constructor()
 	{
 		// Initializations
@@ -99,15 +98,17 @@ class MeshDrawer
 
 	swapYZ( swap )
 	{
-		// Set the uniform parameter(s) of the vertex shader
+		// If true, calculate a new matrix for 'this.yz' by multiplying two matrices
 		if(swap){
 			this.yz = MatrixMult(
+				// The first matrix is an identity matrix modified to invert the Y-axis
 				[
 					1,0,0,0,
 					0,-1,0,0,
 					0,0,1,0,
 					0,0,0,1
-				], 
+				],
+				// The second matrix represents a rotation by 90 degrees around the X-axis 
 				[
 					1,0,0,0,
 					0,Math.cos(Math.PI/2),Math.sin(Math.PI/2),0,
@@ -116,6 +117,7 @@ class MeshDrawer
 				]
 			);
 		}else{
+			 // If 'swap' is false, reset 'this.yz' to the identity matrix, indicating no transformation
 			this.yz = [
 				1,0,0,0,
 				0,1,0,0,
@@ -149,6 +151,7 @@ class MeshDrawer
 	
 	// This method is called to set the texture of the mesh.
 	// The argument is an HTML IMG element containing the texture data.
+
 	setTexture( img )
 	{
 		// Bind the texture
@@ -178,6 +181,7 @@ class MeshDrawer
 	// This method is called when the user changes the state of the
 	// "Show Texture" checkbox. 
 	// The argument is a boolean that indicates if the checkbox is checked.
+	
 	showTexture( show )
 	{
 		// Set the uniform parameter(s) of the fragment shader to specify if it should use the texture.
