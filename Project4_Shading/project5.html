@@ -1,0 +1,176 @@
+<doctype html>
+<!-- Copyright 2020, Cem Yuksel, University of Utah -->
+<html>
+	<head>
+		<title>CS 4600 - Project 5</title>
+		<script type="text/javascript" id="includedscript" src="project5.js"></script>
+		<script type="text/javascript" src="obj.js"></script>
+		<script type="text/javascript" src="scripts/boxdrawer.js"></script>
+		<script type="text/javascript" src="scripts/lightview.js"></script>
+		<script type="text/javascript" src="scripts/app.js"></script>
+
+		<style>
+			html {
+	color: white;
+	background-color: black;
+	font-family: Arial;
+	overflow: hidden;
+}
+body {
+	padding: 0;
+	margin: 0;
+}
+input[type=checkbox], label {
+	cursor: hand;
+}
+input[type=range] {
+	width: 100%;
+}
+#canvas {
+	display: block;
+	position: absolute;
+	top:  0;
+	left: 0;
+	width:  100%;
+	height: 100%;
+}
+#canvas-div {
+	position: relative;
+}
+#controls-div {
+	vertical-align: top;
+	background-color: #333;
+	overflow: auto;
+}
+#controls {
+	padding: 1em;
+}
+.control-group {
+	position: relative;
+	max-width: 12em;
+}
+.control {
+	padding: 0.2em;
+}
+#lightcontrol {
+	width:  12em;
+	height: 12em;
+	background-color: black;
+	outline: 1px solid white;
+	outline-offset: -1px;
+}
+#lightcontrol-label {
+	position: absolute;
+	top: 0.2em;
+	left: 0.2em;
+	pointer-events: none;
+}
+#shininess-label {
+	float: left;
+}
+#shininess-value {
+	float: right;
+	text-align: right;
+	width: 4em;
+}
+@media (orientation: landscape) {
+	#canvas-div {
+		display: inline-block;
+		width:  calc(100% - 14em);
+		height: 100%;
+	}
+	#controls-div {
+		display: inline-block;
+		width:   14em;
+		height: 100%;
+	}
+	.control-group {
+		margin-top: 1em;
+		overflow: hidden;
+	}
+	#texture-img {
+		width: 100%;
+		height: auto;
+	}
+}
+@media (orientation: portrait) {
+	#canvas-div {
+		width:  100%;
+		height: calc(100% - 14em);
+	}
+	#controls-div {
+		width:  100%;
+		height: 14em;
+	}
+	.control-group {
+		display: inline-block;
+		vertical-align: top;
+		margin-left: 2em;
+	}
+	#texture-img {
+		width: auto;
+		height: calc( 100% - 2em );
+	}
+}
+		</style>
+	</head>
+
+	<body onresize="WindowResize()">
+		<div id="canvas-div">
+			<canvas id="canvas"></canvas></div><div id="controls-div">
+			<div id="controls">
+				
+				<div class="control-group" id="light-controls">
+					<canvas id="lightcontrol"></canvas><div id="lightcontrol-label">Light Direction</div>
+					<div class="control">
+						<label for="light-intesity">Light Intensity: <span id="intensity-value">1</span></label>
+						<input id="light-intensity" type="range" min="0" max="10" value="1" step="0.1" onchange="SetLightIntensity(this)">
+					</div>
+					<div class="control">
+						<label for="light-color">Light Color: </label>
+						<input type="color" id="light-color" value="#ffffff" onchange="SetLightColor(this)">
+					</div>
+					<div class="control">
+						<label for="highlight-color">Highlight Color: </label>
+						<input type="color" id="highlight-color" value="#ffffff" onchange="SetSpecColor(this)">
+					</div>
+				</div>
+
+				<div class="control-group">
+					<div class="control">
+						<input id="show-box" name="show-box" type="checkbox" onchange="DrawScene()" checked />
+						<label for="show-box"> Show Box</label>
+					</div>
+					<div class="control">
+						<input id="show-texture" name="show-texture" type="checkbox" onchange="ShowTexture(this)" />
+						<label for="show-texture"> Show Texture</label>
+					</div>
+					<div class="control">
+						<input id="swap-yz" name="swap-yz" type="checkbox" onchange="SwapYZ(this)" />
+						<label for="swap-yz"> Swap Y-Z Axes</label>
+					</div>
+					<div class="control">
+						<input id="auto-rotate" name="auto-rotate" type="checkbox" onchange="AutoRotate(this)"/>
+						<label for="auto-rotate"> Auto Rotation</label>
+					</div>
+					<div class="control">
+						<label for="rotation-speed"> Rotation Speed:</label>
+						<input id="rotation-speed" type="range" min="1" max="100" value="50" disabled/>
+					</div>
+					<div class="control">
+						<span id="shininess-label">Shininess:</span><span id="shininess-value">1</span>
+						<input id="shininess-exp" type="range" min="0" max="100" value="50" oninput="SetShininess(this)"/>
+					</div>
+				</div>
+				<div class="control-group">
+					<div class="control">OBJ model:<br/><input id="obj" type="file" onchange="LoadObj(this)" accept=".obj"/></div>
+					<div class="control">Texture image:<br/><input id="texture" type="file" onchange="LoadTexture(this)" accept="image/*"/></div>
+				</div>
+				<div class="control-group">
+					<img id="texture-img" />
+				</div>
+			</div>
+		</div>
+	</body>
+	
+</html>
