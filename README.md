@@ -15,7 +15,7 @@ This repository is organized as follows:
 - `/Project2_Transformations`: this folder contains the second project, which focuses on implementing a UAV simulation design using transformation functions in JavaScript.
 - `/Project3_TriangularMeshes`: this folder contains the third project, which focuses on implementing a WebGL-based application dedicated to the 3D rendering of triangular meshes.
 - `/Project4_Shading`: this folder contains the fourth project, which focuses on enhancing a WebGL-based application to include advanced shading techniques, specifically implementing the Blinn-Phong model for dynamic lighting and shading effects on 3D triangular meshes.
-- `/Project5_RayTracing`: This folder houses the fifth project, which involves creating a GPU-based ray tracing application using GLSL. It focuses on rendering scenes with spheres and lights, leveraging ray tracing within a WebGL framework to simulate realistic lighting, shadows, and reflections.
+- `/Project5_RayTracing`: this folder contains the fifth project, which involves creating a GPU-based ray tracing application using GLSL. It focuses on rendering scenes with spheres and lights, leveraging ray tracing within a WebGL framework to simulate realistic lighting, shadows, and reflections.
 
 
 
