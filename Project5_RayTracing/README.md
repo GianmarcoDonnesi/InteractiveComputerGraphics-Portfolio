@@ -1,6 +1,5 @@
 # Ray Tracing
 
-## Overview
 In this project, I have implemented a software ray tracer that operates on the GPU using GLSL. The ray tracer integrates with a WebGL framework provided in an HTML interface, where users can interact with various rendering modes including *full ray tracing* and *hybrid* approaches combining rasterization and ray tracing.
 
 ## Project Description
