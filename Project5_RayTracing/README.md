@@ -14,13 +14,13 @@ The ray tracer was developed to render scenes consisting of multiple spheres and
 ## Implementation
 The GLSL code, which forms the core of the ray tracing logic, is integrated into the `project6.js` file. This script includes essential functions such as `RayTracer`, `IntersectRay`, and `Shade`, which were outlined in the provided shader script:
 
-### `IntersectRay`
+### IntersectRay
 Determines if and where a ray intersects with any sphere in the scene. It updates the `HitInfo` structure with details of the intersection.
 
-### `Shade`
+### Shade
 Calculates the color at a point based on the material properties and the lighting conditions, including shadows and light contributions from multiple sources.
 
-### `RayTracer`
+### RayTracer
 Acts as the main entry point for ray tracing within the fragment shader. It uses recursive ray tracing to handle reflections and manages interactions with the environment map for rays that do not hit any object.
 
 ## Tools and Tips
