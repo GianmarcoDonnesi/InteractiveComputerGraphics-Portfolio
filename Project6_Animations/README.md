@@ -43,7 +43,7 @@ The `SimTimeStep` function takes the following parameters:
 - **project7.js**: contains the implementation for the `SimTimeStep` function and other necessary classes and functions.
 - **obj.js**: implements the OBJ parser and includes additional functionalities required for this project.
 - **teapot-low.obj**: a low-resolution Utah Teapot model, suitable for real-time mass-spring simulation.
-- **bricks.png**: a brick texture, suitable for real-time mass-spring simulation.
+- **bricks.png**: a brick texture, suitable for enhancing the visual realism of the mass-spring simulation.
 
 ### Display and Shading
 
