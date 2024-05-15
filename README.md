@@ -16,7 +16,7 @@ This repository is organized as follows:
 - `/Project3_TriangularMeshes`: this folder contains the third project, which focuses on implementing a WebGL-based application dedicated to the 3D rendering of triangular meshes.
 - `/Project4_Shading`: this folder contains the fourth project, which focuses on enhancing a WebGL-based application to include advanced shading techniques, specifically implementing the Blinn-Phong model for dynamic lighting and shading effects on 3D triangular meshes.
 - `/Project5_RayTracing`: this folder contains the fifth project, which involves creating a GPU-based ray tracing application using GLSL. It focuses on rendering scenes with spheres and lights, leveraging ray tracing within a WebGL framework to simulate realistic lighting, shadows, and reflections.
-
+- `/Project6_Animations`: this folder contains the sixth project, which involves creating a physically-based simulation using a mass-spring system. It focuses on simulating the dynamic behavior of an object modeled with mass particles connected by springs. The project leverages JavaScript and WebGL to compute the forces, update positions and velocities, and handle collisions, resulting in realistic motion and interactions within a 3D environment.
 
 
 
